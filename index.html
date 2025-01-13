@@ -1,71 +1,118 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog Başlığı</title>
-    <link rel="stylesheet" href="style.css"> <!-- İsteğe bağlı stil dosyası -->
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Blog Başlığı</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Anasayfa</a></li>
-                    <li><a href="#">Yazılar</a></li>
-                    <li><a href="#">Hakkında</a></li>
-                    <li><a href="#">İletişim</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main>
-        <section class="blog-posts">
-            <article class="post">
-                <h2>Başlık 1</h2>
-                <p class="meta">Yayınlanma Tarihi: 14 Ocak 2025 | Kategori: Teknoloji</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                <a href="#">Devamını oku &raquo;</a>
-            </article>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
 
-            <article class="post">
-                <h2>Başlık 2</h2>
-                <p class="meta">Yayınlanma Tarihi: 13 Ocak 2025 | Kategori: Seyahat</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                <a href="#">Devamını oku &raquo;</a>
-            </article>
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
 
-            <!-- Diğer yazılar buraya eklenebilir -->
-        </section>
+header .logo h1 {
+    font-size: 24px;
+}
 
-        <aside>
-            <div class="widget">
-                <h3>Son Yazılar</h3>
-                <ul>
-                    <li><a href="#">Yazı Başlığı 1</a></li>
-                    <li><a href="#">Yazı Başlığı 2</a></li>
-                    <li><a href="#">Yazı Başlığı 3</a></li>
-                </ul>
-            </div>
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
 
-            <div class="widget">
-                <h3>Kategoriler</h3>
-                <ul>
-                    <li><a href="#">Teknoloji</a></li>
-                    <li><a href="#">Seyahat</a></li>
-                    <li><a href="#">Edebiyat</a></li>
-                </ul>
-            </div>
-        </aside>
-    </main>
+nav ul li {
+    margin-left: 20px;
+}
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Blog Adı. Tüm Hakları Saklıdır.</p>
-        </div>
-    </footer>
-</body>
-</html>
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 30px;
+    background-color: #f8a925;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.services {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
