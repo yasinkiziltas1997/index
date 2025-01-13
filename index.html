@@ -1,118 +1,54 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reklam Ajansı</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ajans X</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hizmetler</a></li>
+                <li><a href="#">Portföy</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Markanızı Büyütmek İçin Bizimle Çalışın</h2>
+            <p>Reklam ve pazarlama stratejilerinizde size rehberlik ediyoruz. Hedef kitlenize en etkili şekilde ulaşmanıza yardımcı oluyoruz.</p>
+            <a href="#hizmetler" class="cta-button">Hizmetlerimizi Keşfedin</a>
+        </div>
+    </section>
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
+    <section id="hizmetler" class="services">
+        <h2>Hizmetlerimiz</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Reklam Yönetimi</h3>
+                <p>Markanız için en etkili reklam stratejilerini oluşturuyoruz.</p>
+            </div>
+            <div class="service-card">
+                <h3>Dijital Pazarlama</h3>
+                <p>SEO, sosyal medya ve dijital kampanyalarla markanızı güçlendiriyoruz.</p>
+            </div>
+            <div class="service-card">
+                <h3>Branding</h3>
+                <p>Markanız için etkili bir kimlik tasarımı yapıyoruz.</p>
+            </div>
+        </div>
+    </section>
 
-header .logo h1 {
-    font-size: 24px;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.hero-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    padding: 10px 30px;
-    background-color: #f8a925;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-.services {
-    background-color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.services h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-.service-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.service-card {
-    background-color: #f4f4f4;
-    padding: 20px;
-    width: 300px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-}
-
-.service-card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    font-size: 16px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
+    <footer>
+        <p>&copy; 2025 Ajans X. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
